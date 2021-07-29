@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0c0034; -webkit-text-stroke: #0c0034}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0c1c11; -webkit-text-stroke: #0c1c11}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0f0056; -webkit-text-stroke: #0f0056}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #124104; -webkit-text-stroke: #124104}
+    span.s1 {font-kerning: none; color: #75320c; -webkit-text-stroke: 0px #75320c}
+    span.s2 {font-kerning: none; color: #0c1c11; -webkit-text-stroke: 0px #0c1c11}
+    span.s3 {font-kerning: none; color: #124104; -webkit-text-stroke: 0px #124104}
+    span.s4 {font-kerning: none}
+    span.s5 {font-kerning: none; color: #0e2f1d; -webkit-text-stroke: 0px #0e2f1d}
+    span.s6 {font-kerning: none; color: #136002; -webkit-text-stroke: 0px #136002}
+    span.s7 {font-kerning: none; color: #586f18; -webkit-text-stroke: 0px #586f18}
+    span.s8 {font-kerning: none; color: #414141; -webkit-text-stroke: 0px #414141}
+    span.s9 {font-kerning: none; color: #960015; -webkit-text-stroke: 0px #960015}
+    span.s10 {font-kerning: none; color: #9c5409; -webkit-text-stroke: 0px #9c5409}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">{%</span><span class="s2"> </span><span class="s3"><b>if</b></span><span class="s2"> </span><span class="s4">latest_question_list</span><span class="s2"> </span><span class="s1">%}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s3"><b>ul</b></span><span class="s4">&gt;</span></p>
+<p class="p1"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s1">{%</span><span class="s2"> </span><span class="s3"><b>for</b></span><span class="s2"> </span><span class="s4">question</span><span class="s2"> </span><span class="s3"><b>in</b></span><span class="s2"> </span><span class="s4">latest_question_list</span><span class="s2"> </span><span class="s1">%}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s5">&lt;</span><span class="s6"><b>li</b></span><span class="s5">&gt;&lt;</span><span class="s6"><b>a</b></span><span class="s5"> </span><span class="s7">href</span><span class="s8">=</span><span class="s9">"</span><span class="s10">{%</span><span class="s5"> </span><span class="s6"><b>url</b></span><span class="s5"> </span><span class="s9">'polls:detail'</span><span class="s5"> </span><span class="s4">question.id</span><span class="s5"> </span><span class="s10">%}</span><span class="s9">"</span><span class="s5">&gt;</span><span class="s10">{{</span><span class="s5"> </span><span class="s4">question.question_text</span><span class="s5"> </span><span class="s10">}}</span><span class="s5">&lt;/</span><span class="s6"><b>a</b></span><span class="s5">&gt;&lt;/</span><span class="s6"><b>li</b></span><span class="s5">&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">{%</span><span class="s4"> </span><span class="s3"><b>endfor</b></span><span class="s4"> </span><span class="s1">%}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span>&lt;/</span><span class="s3"><b>ul</b></span><span class="s4">&gt;</span></p>
+<p class="p4"><span class="s1">{%</span><span class="s2"> </span><span class="s4"><b>else</b></span><span class="s2"> </span><span class="s1">%}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s3"><b>p</b></span><span class="s4">&gt;No polls are available.&lt;/</span><span class="s3"><b>p</b></span><span class="s4">&gt;</span></p>
+<p class="p4"><span class="s1">{%</span><span class="s2"> </span><span class="s4"><b>endif</b></span><span class="s2"> </span><span class="s1">%}</span></p>
+</body>
+</html>
